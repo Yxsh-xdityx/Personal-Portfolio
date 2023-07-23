@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	scroll-behavior: smooth;
+}
+
+/*Header css*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky{
+	background: #fff;
+	padding: 20px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo{
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+header.sticky .logo{
+	color: #111;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+header.sticky ul li a{
+	color: #111;
+}
+/*Header css end*/
+
+/*Section 1 css*/
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background: url('./images/banner.jpg');
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner h2{
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.banner h2 span{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.banner h3{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 500;
+}
+
+.btn{
+	position: relative;
+	background: green;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	background: linear-gradient(235deg,lightblue,#0106,green);
+}
+/*Section 1 css end*/
+
+/*Section 2 css*/
+.about{
+	min-height: 100vh;
+}
+.heading{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #111;
+	margin-top: 30px;
+}
+
+.heading h2{
+	font-weight: 600;
+	font-size: 50px;
+}
+
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contentBx {
+	padding-right: 30px;
+}
+
+.contentBx h3{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.w50{
+	min-width: 50%;
+}
+
+.w50 img{
+	clip-path: circle();
+}
+
+img{
+	max-width: 100%;
+}
+/*Section 2 css end*/
+
+/*Section 3 css*/
+.skills{
+	background: #111;
+	min-height: 100vh;
+}
+
+.heading.white{
+	color: #fff;
+}
+
+.skills .content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.skills .content .skillsBx{
+	padding: 40px 20px;
+	background: #222;
+	color: #fff;
+	max-width: 340px;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.skills .content .skillsBx:hover{
+	background: linear-gradient(235deg,#010615,#00bcd4);
+}
+
+.skills .content .skillsBx img{
+	max-width: 80px;
+	filter: invert(1);
+}
+
+.skills .content .skillsBx h2{
+	font-size: 20px;
+	font-weight: 600;
+}
+/*Section 3 css end*/
+
+/*Section 4 css*/
+.Team{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+}
+
+.box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+	background: #060c21;
+	transition: 0.5s;
+}
+
+.box:hover{
+	height: 400px;
+}
+
+.box .imgBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.box .imgBx img{
+	max-width: 100%;
+	opacity: 0.1;
+	transition: 0.5s;
+}
+
+.box:hover .imgBx img{
+	opacity: 1;
+}
+
+.box:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+}
+
+.box:after
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px);
+
+}
+
+.box:before
+.box:after
+{
+	background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+	
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after
+{
+	background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after
+{
+	background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+}
+
+.box:nth-child(4):before,
+.box:nth-child(4):after
+{
+	background: linear-gradient(235deg,lightblue,#0106,green);
+}
+
+.box .contents{
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 90px;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.box:hover .contents{
+	opacity: 1;
+}
+
+.box .contents h2{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+
+.box .contents h2 span{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+.boxcontents{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #111;
+}
+
+.boxcontents h2{
+	font-weight: 600;
+	font-size: 50px; 
+}
+/*Section 4 css end*/
+
+/*Section 5 css*/
+.contactInfo{
+	color: #fff;
+	min-width: 40px;
+}
+
+.text h3{
+	margin-bottom: 5%;
+}
+
+.contact1{
+	background: #111;
+	min-height: 100vh;
+}
+
+.content1{
+	padding-bottom: 0px;
+	height: 0px;
+	min-height: 65vh;
+}
+
+.contactInfoBx{
+	position: relative;
+}
+
+/*.contactInfoBx .box1
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}*/
+
+.contactInfoBx .box1 .icon{
+	min-width: 40px;
+	padding-top: 3%;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+/*.contactInfoBx .box1 .text
+{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}*/
+
+.contactInfoBx .box1 .text h3{
+	font-weight: 500;
+	color: green;
+	margin-bottom: 0;
+}
+
+.sm{
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+.sm a{
+  display: inline-block;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #6ab04c;
+  margin: 0 16px;
+  transition: .4s linear;
+  position: relative;
+}
+
+.sm a::before, .sm a::after{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: .4s linear;
+}
+
+.sm a:hover{
+  transform: scale(.8);
+}
+
+.sm a:hover::before{
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+}
+
+.sm a:hover::after{
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  transform: skewY(-20deg);
+}
+/*Section 5 css end*/
+
+/*Footer css*/
+.copyright{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+/*Footer css end*/
+
+/*Responsive*/
+@media (max-width: 768px)
+{
+	header,
+	header.sticky
+	{
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+
+	.menu
+	{
+		position: fixed;
+		top: 75px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.menu.active
+	{
+		left: 0;
+	}
+
+	header ul li a
+	{
+		color: #111;
+		font-size: 24px;
+		margin: 10px;
+	}
+
+	.toggle
+	{
+		width: 40px;
+		height: 40px;
+		background: url('./images/menu.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+
+	.toggle.active
+	{
+		background: url('./images/close.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+	}
+
+	header.sticky .toggle
+	{
+		filter: invert(1);
+	}
+
+	section
+	{
+		padding: 100px 50px;
+	}
+
+	.banner
+	{
+		padding: 100px 226px 100px;
+	}
+
+	.banner h2
+	{
+		font-size: 1.5em;
+	}
+
+	.banner h3
+	{
+		font-size: 1.5em;
+	}
+
+	.btn
+	{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+
+	.heading h2
+	{
+		font-size: 24px;
+	}
+
+	.contentBx h3
+	{
+		font-size: 20px;
+	}
+
+	.content
+	{
+		flex-direction: column; 
+	}
+
+	.w50
+	{
+		margin-bottom: 20px;
+	}
+
+	.heading.white h2
+	{
+		font-size: 30px;
+	}
+
+}
+
+@media (max-width: 600px)
+{
+	header,
+	header.sticky
+	{
+		padding: 20px 20px;
+	}
+
+	.banner
+	{
+		padding: 150px 20px 100px;
+	}
+
+	section
+	{
+		padding: 100px 20px;
+	}
+
+}
+/*Responsive css end*/
+
+/*End css*/

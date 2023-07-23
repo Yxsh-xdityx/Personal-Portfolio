@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Personal Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+	<script type="text/javascript" src="script.js"></script> 
+</head>
+
+<body>
+<!--header-->
+<header>
+	<a href="#" class="logo">Portfolio</a>
+	<div class="toggle" onclick="toggleMenu();"></div>
+	<ul class="menu">
+		<li><a href="#home" onclick="toggleMenu();">Home</a></li>
+		<li><a href="#about" onclick="toggleMenu();">About</a></li>
+		<li><a href="#myskills" onclick="toggleMenu();">My Skills</a></li>
+		<li><a href="#team" onclick="toggleMenu();">Team</a></li>
+		<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+	</ul>
+</header>
+
+<!--Section 1-->
+<section class="banner" id="home">
+	<div class="textBx">
+		<h2><br>Hello, I'm<br><span>Yash Aditya.</span></h2>
+		<h3>A Computer Science Engineer</h3>
+		<a href="#about" class="btn">About Me</a>
+	</div>
+</section>
+
+<!--Section 2-->
+<section class="about" id="about">
+	<div class="heading">
+		<h2 style="padding-top: 67px;">About Me</h2>
+	</div>
+	<div class="content">
+		<div class="contentBx w50">
+			<h3>I'm a Full Stack Developer
+				& Designer.</h3>
+			<p>When it comes to technology, I am passionate because I am a
+				web developer. As a web developer, I am always pushing
+				myself to do better, whether that means writing more eficient
+				code or creating more visually attractive websites.
+				I have extensive experience in bringing complex projects to life,
+				and a solid foundation in HTML, CSS, and JavaScript. It doesn't
+				matter if you need a basic brochure site or a complex e-
+				commerce solution, I will always do my best to meet, and even
+				surpass, your expectations.
+				I also have a firm belief in the value of teamwork, and I
+				welcome the opportunity to partner with my clients to
+				materialize their visions. I'd love to hear from you if you need a
+				web developer who can make your website idea a reality. Let's
+				make something incredible, together.</p>
+		</div>
+		<div class="w50">
+			<img src="..\Personal-Portfolio\images\img1.jpg" class="img">
+		</div>
+	</div>
+</section>
+
+<!--Section 3-->
+<section class="skills" id="myskills">
+	<div class="heading white">
+		<h2 style="padding-top: 67px;">My Skills</h2>
+		<p>I do all kinds of neat stuff</p>
+	</div>
+	<div class="content">
+		<div class="skillsBx">
+			<img src="..\Personal-Portfolio\images\icon1.png">
+			<h2>Web Design</h2>
+			<p>The skill of creating visually appealing and user-friendly websites through the use of layout, colors, typography, and interactive elements.</p>
+		</div>
+		<div class="skillsBx">
+			<img src="..\Personal-Portfolio\images\icon2.png">
+			<h2>Web Development</h2>
+			<p>The skill of building and maintaining websites and web applications using various programming languages, frameworks, and technologies.</p>
+		</div>
+		<div class="skillsBx">
+			<img src="..\Personal-Portfolio\images\icon3.png">
+			<h2>Andorid App</h2>
+			<p>Android App development is the skill of creating applications for the Android operating system.</p>
+		</div>
+		<div class="skillsBx">
+			<img src="..\Personal-Portfolio\images\icon4.png">
+			<h2>Git Version Control</h2>
+			<p>The skill of efficiently managing and tracking changes to code and files, enabling collaboration among developers and facilitating the development and maintenance of software projects.</p>
+		</div>
+		<div class="skillsBx">
+			<img src="..\Personal-Portfolio\images\icon5.png">
+			<h2>Programming</h2>
+			<p>Programming control is the ability to direct the flow of execution and make decisions within a program using conditional statements, loops, and other control structures.</p>
+		</div>
+		<div class="skillsBx">
+			<img src="..\Personal-Portfolio\images\icon6.png">
+			<h2>Video Editing</h2>
+			<p>The process of manipulating and rearranging video clips to create a cohesive and visually appealing final product.</p>
+		</div>
+	</div>
+</section>
+
+<!--Section 4-->
+<section class="Team" id="team">
+	<div class="boxcontents">
+		<h2>Team</h2>
+		<p>Undertaken by a single individual.</p>	
+	</div>
+		<div class="box" style="margin-top: 0px;margin-bottom: 0px;">
+			<div class="imgBx">
+				<img src="..\Personal-Portfolio\images\img1.jpg">
+			</div>
+			<div class="contents">
+				<h2>Yash Aditya<br><span>Creative Designer</span></h2>
+			</div>
+		</div>
+</section>
+
+<!--Section 5-->
+<section class="contact1" id="contact">
+		<div class="heading white">
+			<h2 style="padding-top: 67px;">Connect with me</h2>
+		</div>
+		<div class="content1">
+			<div class="contactInfo">
+				<h3>Contact Info</h3>
+				<div class="contactInfoBx">
+					<div class="box1">
+						<div class="icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="text">
+							<h3>Address</h3>
+							<p>Flat Number A/4 Nilamber Awaas Kanke Road <br>India , Jharkhand , Ranchi<br>834008</p>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="icon">
+							<i class="fa fa-phone"></i>
+						</div>
+						<div class="text">
+							<h3>Phone</h3>
+							<p>(+91)914-264-3039</p>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="icon">
+							<i class="fa fa-envelope"></i>
+						</div>
+						<div class="text">
+							<h3>Email</h3>
+							<p>yashaditya49@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sm">
+    		<a href="https://github.com/Yxsh-xdityx" target="_blank"><i class="fab fa-github"></i></a>
+   	 		<a href="https://www.behance.net/yashaditya2" target="_blank"><i class="fab fa-behance"></i></a>
+    		<a href="https://www.instagram.com/based.yash/" target="_blank"><i class="fab fa-instagram"></i></a>
+  		</div>
+</section>
+
+<!--footer-->
+<footer>
+		<div class="copyright">
+			<p> All Rights Reserved. Copyright (c) 2020 Yash Aditya.</p>
+		</div>
+</footer>
+
+</body>
+</html>
+<!--End Html-->
