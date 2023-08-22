@@ -1,1 +1,1 @@
-# [`Personal-Portfolio`](https://github.com/Yxsh-xdityx/Personal-Portfolio.git)
+# [`Personal-Portfolio`](https://yxsh-xdityx.github.io/Personal-Portfolio/)
